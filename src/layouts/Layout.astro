@@ -1,6 +1,5 @@
 ---
 import Navigation from '../components/Navigation.astro';
-
 const { title, description = "Portfoio Website of Johndel Patrick Torrizo",
  image} = Astro.props;
 ---
@@ -16,11 +15,12 @@ const { title, description = "Portfoio Website of Johndel Patrick Torrizo",
 		<meta property="og:image" content="{image}" />
 		<title>{title}</title>
 	</head>
+	<Navigation />
 	<body>
-		<Navigation />
 		<slot />
 	</body>
 </html>
+
 <style is:global>
 	:root {
 		--accent: 136, 58, 234;
@@ -30,7 +30,7 @@ const { title, description = "Portfoio Website of Johndel Patrick Torrizo",
 			45deg,
 			rgb(var(--accent)),
 			rgb(var(--accent-light)) 30%,
-			white 60%
+			white 100%
 		);
 	}
 	html {

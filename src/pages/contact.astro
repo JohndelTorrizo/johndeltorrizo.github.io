@@ -1,0 +1,122 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Johndel Torrizo">
+    <img src="https://avatars.githubusercontent.com/u/72369431?s=400&u=a827a1c3d0e903ae39f0beada429c6b27ca2c105&v=4"
+    class="profile-picture" />
+    <h1>Johndel Torrizo</h1>
+    <body>
+        <div class="container">
+            <a class="button facebook" target="_blank" href="https://www.facebook.com/JohndelPatrick">Facebook</a><br>
+            <a class="button instagram" target="_blank" href="https://www.instagram.com/johndelpatrick/">Instagram</a><br>
+            <a class="button twitter" target="_blank" href="https://twitter.com/JdTorrizo">X</a><br>
+            <a class="button linkedin" target="_blank" href="https://www.linkedin.com/in/johndeltorrizo/">LinkedIn</a><br>
+            <a class="button github" target="_blank" href="https://github.com/JohndelTorrizo">Github</a><br>
+        </div>
+    </body>
+</Layout>
+<style>
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 0 auto;
+        box-sizing: border-box;
+        margin-top: 1rem;
+    }
+    .button{
+    display: inline-block;
+    text-decoration: none;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    width: 300px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 14px 12px 12px 12px;
+    letter-spacing: 0.1px;
+    white-space: wrap;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    }
+
+    .button:hover{
+        transform: translateY(-5px);
+    }
+    .button.facebook {
+        background-color: #3b5998;
+        border: 1px solid #212121;
+    }
+
+    .button.facebook:hover {
+        background-color: #2d4373;
+    }
+
+    .button.instagram{
+        background-color: #c13584;
+    }
+    
+    
+    .button.instagram:hover{
+        background-color: #833ab4;
+    }
+
+    .button.twitter{
+        background-color: #212121;
+    }
+
+    .button.twitter:hover{
+        background-color: #0d0d0d;
+    }
+
+    .button.linkedin{
+        background-color: #0077b5;
+    }
+
+    .button.linkedin:hover{
+        background-color: #005f8b;
+    }
+
+    .button.github{
+        background-color: #5f2a8a;
+    }
+
+    .button.github:hover{
+        background-color: #3f007d;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    .profile-picture {
+        border-radius: 50% ;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        display: block;
+        margin: auto; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);       
+    }
+    h1{
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    .profile-picture {
+        border-radius: 50% ;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        display: block;
+        margin-top: 2rem; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);       
+    }
+</style>

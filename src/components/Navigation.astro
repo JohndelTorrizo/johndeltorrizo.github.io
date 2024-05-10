@@ -2,14 +2,12 @@
 const { href } = Astro.props;
 ---
 
-<input type="checkbox" id="menu-toggle" class="menu-toggle">
-<label for="menu-toggle" class="menu-icon">&#9776;</label>
 
 <nav class="navbar">
     <ul class="nav-links">
         <li><a class="nav-link" href="/">Home</a></li>
-        <li><a class="nav-link" href="/projects/">Projects</a></li>
-        <li><a class="nav-link" href="/blog/">Blog</a></li>
+<!--         <li><a class="nav-link" href="/projects/">Projects</a></li>
+        <li><a class="nav-link" href="/blog/">Blog</a></li> -->
         <li><a class="nav-link" href="/contact/">Contact</a></li>
     </ul>
 </nav>
@@ -34,7 +32,6 @@ const { href } = Astro.props;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
-    text-transform: uppercase;
     margin-left: 1rem;
     transition: color 0.3s ease;
 }
@@ -75,4 +72,3 @@ const { href } = Astro.props;
         margin-right: 1rem;
     }
 }
-</style>

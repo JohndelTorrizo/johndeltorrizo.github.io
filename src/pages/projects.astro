@@ -1,0 +1,34 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+const projects = await Astro.glob('/projects/*.md');
+---
+<script>
+export async function getStaticPaths() {
+    const posts = await Astro.glob('../posts/**/*.md')
+  
+    return posts.map(post => ({
+      params: {
+        slug: post.frontmatter.slug
+      },
+      props: {
+        post
+      },
+    }))
+  }
+</script>
+<Layout>
+    <ul role="list" class="link-card-grid">
+        <Card
+            image='https://dummyimage.com/600x400/ffffff/f2f2f2.png&text=...'
+            href=""
+            title=""
+            description=""
+        />
+        <Card
+            image='https://dummyimage.com/600x400/ffffff/f2f2f2.png&text=...'
+            href=""
+            title=""
+            description=""
+        />
+</Layout>
