@@ -1,7 +1,7 @@
 
 ---
-layout: '.../layouts/ProjectShowcaseLayout.astro'
-title: '4-DOF Robotic Arm'
+layout: '../layouts/ProjectShowcaseLayout.astro'
+title: 4-DOF Robotic Arm
 ---
 
 # 4-DOF Robotic Arm
